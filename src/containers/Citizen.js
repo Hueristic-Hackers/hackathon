@@ -1,9 +1,9 @@
 import React, { Component } from "react"
-import Stats from "./Stats"
-import NavBar from "./NavBar"
+import Stats from "../components/Stats"
+import NavBar from "../components/NavBar"
+import Category from "../components/Category"
+import Complaint from "../components/Complaint"
 import "./citizen.css"
-import Category from "./Category"
-import Complaint from "./Complaint"
 
 class Citizen extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React from "react"
-import "./citizen.css"
+
 const Stats = () => {
   return (
     <div className="stats">

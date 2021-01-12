@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Switch, Error } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import Citizen from "./Citizen"
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <main>
       <Switch>
         <Route path="/citizen" component={Citizen} />
-        <Route component={Error} />
+        {/* <Route component={Error} /> */}
       </Switch>
     </main>
   )
