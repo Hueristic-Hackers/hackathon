@@ -1,0 +1,52 @@
+*,
+#root {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.citizen {
+  background-color: rgb(201, 204, 204);
+}
+
+.title {
+  color: rgb(224, 243, 240);
+  background-color: rgb(12, 24, 46);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.stats {
+  width: 20vw;
+  padding: 2rem 1rem;
+}
+.stats h5 {
+  font-size: larger;
+  color: rgb(25, 63, 63);
+}
+
+.citi-head {
+  display: flex;
+  justify-content: space-between;
+}
+.NavBar {
+  padding-top: 2rem;
+  padding-right: 10px;
+}
+.NavItem {
+  text-decoration: none;
+  color: blue;
+  padding: 1rem 10px;
+}
+.compplain-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.complain-categories {
+  width: 80%;
+  margin: 1rem 2rem;
+}
+.complaints {
+  margin: 1rem 2rem;
+}
