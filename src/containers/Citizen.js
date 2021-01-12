@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import Stats from "../components/Stats"
 import Category from "../components/Category"
 import Complaint from "../components/Complaint"
+import Login from "../components/Login"
+import Logout from "../components/Logout"
 import "./citizen.css"
 
 class Citizen extends Component {
@@ -28,6 +30,12 @@ class Citizen extends Component {
                   <a className="NavItem" href="/new">
                     New Complaint
                   </a>
+                </li>
+                <li>
+                  <Login />
+                </li>
+                <li>
+                  <Logout />
                 </li>
               </ul>
             </nav>
