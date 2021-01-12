@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Stats from "../components/Stats"
-import NavBar from "../components/NavBar"
 import Category from "../components/Category"
 import Complaint from "../components/Complaint"
 import "./citizen.css"
@@ -13,7 +12,25 @@ class Citizen extends Component {
           <h1 className="title">CITIZEN HOMEPAGE</h1>
           <div className="citi-head">
             <Stats />
-            <NavBar />
+            <nav>
+              <ul>
+                <li>
+                  <a className="NavItem" href="/">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a className="NavItem" href="/complaints">
+                    My Complaints
+                  </a>
+                </li>
+                <li>
+                  <a className="NavItem" href="/new">
+                    New Complaint
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div className="compplain-section">

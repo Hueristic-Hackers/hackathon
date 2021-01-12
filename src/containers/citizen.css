@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-between;
 }
-.NavBar {
+nav {
   padding-top: 2rem;
   padding-right: 10px;
 }
@@ -38,6 +38,13 @@
   color: blue;
   padding: 1rem 10px;
 }
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .compplain-section {
   display: flex;
   justify-content: space-between;

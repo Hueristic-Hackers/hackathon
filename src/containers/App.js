@@ -6,7 +6,7 @@ function App() {
   return (
     <main>
       <Switch>
-        <Route path="/citizen" component={Citizen} />
+        <Route path="/" component={Citizen} />
         {/* <Route component={Error} /> */}
       </Switch>
     </main>
