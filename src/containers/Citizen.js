@@ -32,10 +32,10 @@ class Citizen extends Component {
                   </a>
                 </li>
                 <li>
-                  <Login />
+                  <Login className="NavItem" />
                 </li>
                 <li>
-                  <Logout />
+                  <Logout className="NavItem" />
                 </li>
               </ul>
             </nav>
