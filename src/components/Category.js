@@ -1,12 +1,12 @@
 import React from "react"
 import CategoryItem from "./CategoryItem"
 
-const Category = () => {
+const Category = ({ categories }) => {
   return (
     <div>
-      <CategoryItem name="Garbage" />
-      <CategoryItem name="Pothole" />
-      <CategoryItem name="Traffic" />
+      {categories.map((name, i) => {
+        return <CategoryItem name={categories[i].name} />
+      })}
     </div>
   )
 }

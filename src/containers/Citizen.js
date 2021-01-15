@@ -28,7 +28,12 @@ class Citizen extends Component {
           content: "Lorem ipsum dolor sit amet, consectet",
         },
       ],
-      categories: [],
+      categories: [
+        { name: "garbage" },
+        { name: "roads" },
+        { name: "safety" },
+        { name: "traffic" },
+      ],
     }
   }
 
@@ -72,7 +77,7 @@ class Citizen extends Component {
         <div className="compplain-section">
           <div className="complain-categories">
             <h2>Categories</h2>
-            <Category />
+            <Category categories={this.state.categories} />
           </div>
           <div className="complaints">
             <h2>Complaints</h2>
