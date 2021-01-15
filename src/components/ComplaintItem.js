@@ -1,10 +1,10 @@
 import React from "react"
 
-const ComplaintItem = (props) => {
+const ComplaintItem = ({ title, content }) => {
   return (
     <div>
-      <h3>{props.title}</h3>
-      <p>{props.content}</p>
+      <h3>{title}</h3>
+      <p>{content}</p>
     </div>
   )
 }

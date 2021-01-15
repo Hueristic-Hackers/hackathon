@@ -7,6 +7,27 @@ import Logout from "../components/Logout"
 import "./citizen.css"
 
 class Citizen extends Component {
+  constructor() {
+    super()
+    this.state = {
+      complaints: [
+        {
+          title: "Title 1",
+          content: "Lorem ipsum dolor sit amet, consectet",
+        },
+
+        {
+          title: "Title 2",
+          content: "Lorem ipsum dolor sit amet, consectet",
+        },
+
+        {
+          title: "Title 3",
+          content: "Lorem ipsum dolor sit amet, consectet",
+        },
+      ],
+    }
+  }
   render() {
     return (
       <div className="citizen">
@@ -48,7 +69,7 @@ class Citizen extends Component {
           </div>
           <div className="complaints">
             <h2>Complaints</h2>
-            <Complaint />
+            <Complaint complaints={this.state.complaints} />
           </div>
         </div>
       </div>
