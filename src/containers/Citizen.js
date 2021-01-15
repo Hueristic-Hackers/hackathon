@@ -4,12 +4,14 @@ import Category from "../components/Category"
 import Complaint from "../components/Complaint"
 import Login from "../components/Login"
 import Logout from "../components/Logout"
+import Searchbox from "../components/Searchbox"
 import "./citizen.css"
 
 class Citizen extends Component {
   constructor() {
     super()
     this.state = {
+      searchfield: "",
       complaints: [
         {
           title: "Title 1",
@@ -26,7 +28,12 @@ class Citizen extends Component {
           content: "Lorem ipsum dolor sit amet, consectet",
         },
       ],
+      categories: [],
     }
+  }
+
+  onSearchChange = (event) => {
+    this.setState({ searchfield: event.target.value })
   }
   render() {
     return (
@@ -69,6 +76,7 @@ class Citizen extends Component {
           </div>
           <div className="complaints">
             <h2>Complaints</h2>
+            <Searchbox onSearchChange={this.onSearchChange} />
             <Complaint complaints={this.state.complaints} />
           </div>
         </div>
